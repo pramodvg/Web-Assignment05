@@ -9,7 +9,7 @@ body {
 }
 
 body {
-  color: #FBFBFB;
+  color: #fbfbfb;
 }
 h1,
 h2,
@@ -21,7 +21,7 @@ h6 {
 }
 
 section {
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
 }
 
 /* loader */
@@ -48,18 +48,16 @@ section {
 
 /* nav */
 
-.navbar-brand{
-  color:#FBD31A;
+.navbar-brand {
+  color: #fbd31a;
   font-size: 25px !important;
   font-weight: 700;
   margin-left: 100px;
 }
 .navbar-custom {
-    background-color: white;
+  background-color: white;
   height: 90px;
-    
 }
-
 
 .navitem ul li {
   width: 140px;
@@ -156,4 +154,20 @@ section {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.home-btn-hire:hover {
+    transition: all 200ms linear;
+    border: 2px solid #ffb633;
+    background-color: white;
+    color: #ffb633;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
 }
