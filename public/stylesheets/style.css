@@ -24,6 +24,10 @@ section {
   background-color: #fbfbfb;
 }
 
+#home-section,#about-section {
+  height: 100%;
+}
+
 /* loader */
 #loader {
   position: absolute;
@@ -85,9 +89,7 @@ section {
 }
 
 /* Home section */
-#home-section {
-  height: 100%;
-}
+
 .home-section-box {
   display: table;
   height: 100%;
@@ -156,6 +158,7 @@ section {
   -o-border-radius: 5px;
 }
 
+/* hire me button */
 .home-btn-hire:hover {
     transition: all 200ms linear;
     border: 2px solid #ffb633;
@@ -171,3 +174,29 @@ section {
     -ms-transition: all 200ms linear;
     -o-transition: all 200ms linear;
 }
+
+/* about section */
+
+/* left section text */
+.about-section-textctr,.about-section2-textctr{
+  margin-top: 50px;
+ 
+}
+.about-section2-textctr{
+ margin-left: 10px;
+}
+.about-txt1 {
+ font-size: 20px;
+  font-weight: 800;
+  line-height: 40px;
+   text-align: justify;
+  word-spacing: 0.5px;
+}
+.about-txt2 {
+ color: #707070;
+  font-size: 15px;
+  font-weight: 400;
+   text-align: justify;
+  word-spacing: 0.5px;
+}
+
