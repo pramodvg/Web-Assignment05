@@ -1,14 +1,10 @@
 var express = require('express');
 var router = express.Router();
+const controllerData = require('../controller/index')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { Title: 'Express', 
-  ParaText: 'This is First Paragraph' });
-});
+router.get('/', controllerData.index);
 
-router.get('/about', (req,res,next) =>{
-  res.render('about',{title:'About this page', paragraph:'This is about my Project'})
-});
+router.get('/about', controllerData.about);
 
 module.exports = router;
