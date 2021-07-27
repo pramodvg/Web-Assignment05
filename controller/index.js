@@ -1,10 +1,10 @@
 exports.index = function (req, res, next) {
     res.render('index', {
-        Title: 'Hello',
-        ParaText: 'This is First Paragraph'
+        Title: 'Home',
+        activeHome: true
     });
 }
 
 exports.about = (req, res, next) => {
-    res.render('about', { title: 'About this page', paragraph: 'This is about my Project' })
+    res.render('about', { Title: 'About Me', activeAbout: true })
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{title}}</title>
+    <title>{{Title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <!-- Yeti Bootstrap Theme from bootswatch.com -->
     <link rel='stylesheet' href="/stylesheets/bootstrap.min.css"/>
@@ -24,10 +24,10 @@
       <div class="navitem navbar-collapse">
         <ul class="navbar-nav">
           <li>
-            <a href="/">Home</a>
+            <a href="/" class="{{#if activeHome}}active{{else}}''{{/if}}">Home</a>
           </li>
           <li>
-            <a href="/about">About</a>
+            <a href="/about" class="{{#if activeAbout}}active{{else}}''{{/if}}">About</a>
           </li>
           <li>
             <a href="/resume">Resume</a>
