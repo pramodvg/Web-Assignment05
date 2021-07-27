@@ -25,7 +25,8 @@ section {
 }
 
 #home-section,
-#about-section {
+#about-section,
+#contact-section {
   height: 100%;
 }
 
@@ -59,6 +60,10 @@ section {
   font-weight: 700;
   margin-left: 100px;
 }
+.navbar-brand:hover {
+  color: black;
+}
+
 .navbar-custom {
   background-color: white;
   height: 90px;
@@ -126,12 +131,12 @@ section {
 }
 
 #home-myavtar {
-  border-radius: 8px;
-  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 30px 18px rgba(255, 155, 5, 0.137);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 #home-myavtar {
@@ -196,5 +201,147 @@ section {
   font-size: 15px;
   font-weight: 400;
   text-align: justify;
-  word-spacing: 0.5px;
+}
+
+/* Contact me css */
+.aboutus-details{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.about-datalist ul {
+  padding: 0;
+  list-style: none;
+}
+.aboutus-details > p{
+  margin-left: 3px; 
+}
+.about-datalist h6{
+  margin-left: 10px;
+ padding-bottom: 5px;
+}
+.about-datalist ul li i {
+  font-size: 20px;
+  text-align: center;
+  width: 30px;
+  margin-right: 10px;
+}
+.about-datalist ul li {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+  display: flex;
+}
+.about-scoicon ul {
+  list-style-type: none;
+  padding: 0;
+}
+.about-scoicon ul li {
+  display: inline-block;
+  padding: 0;
+}
+.about-scoicon ul li a {
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 39px;
+  color: black;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+}
+
+.about-scoicon ul.socialicon{
+  margin: 0 !important;
+}
+
+ul.socialicon li:nth-child(1) a:hover {
+  background: #3b5998;
+  color: white;
+  border-color: transparent;
+}
+ul.socialicon li:nth-child(2) a:hover {
+  background: #ff3300;
+  color: white;
+  border-color: transparent;
+}
+ul.socialicon li:nth-child(3) a:hover {
+  background: #3066db;
+  color: white;
+  border-color: transparent;
+}
+.form-box{
+  position: relative;
+  top: 50%;
+  transform: translateY(-40%);
+  -webkit-transform: translateY(-40%);
+  -moz-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  -o-transform: translateY(-40%);
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.1);
+  padding: 15px;
+}
+.form-box h3,p{
+  margin-left: 22px;
+  padding: 0;
+}
+
+.form-box .row [class*='form-'] {
+  margin-top: 15px !important;
+}
+.form-box .container {
+  margin-top: 20px;
+}
+
+.form-btn button {
+  margin-top: 15px;
+}
+
+.form-btn button {
+  border: 1px solid #ffb633;
+  padding: 8px 30px;
+  border-radius: 50px;
+  outline: 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-color: #ffb633;
+  color: white;
+  font-weight: 600;
+  transition: all 400ms;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -ms-transition: all 400ms;
+  -o-transition: all 400ms;
+}
+.form-btn button:hover{
+  background-color: white;
+  border: 2px solid #ffb633;
+  color: #ffb633;
+  transition: 200ms linear;
+  -webkit-transition: 200ms linear;
+  -moz-transition: 200ms linear;
+  -ms-transition: 200ms linear;
+  -o-transition: 200ms linear;
+}
+/* remove button default border on clicked */
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }

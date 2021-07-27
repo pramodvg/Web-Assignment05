@@ -8,3 +8,7 @@ exports.index = function (req, res, next) {
 exports.about = (req, res, next) => {
     res.render('about', { Title: 'About Me', activeAbout: true })
 }
+
+exports.contactme = (req, res, next) => {
+    res.render('contactme', { Title: 'Contact Me', activeContact: true })
+}

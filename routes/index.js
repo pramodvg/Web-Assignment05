@@ -8,5 +8,8 @@ router.get('/', controllerData.index);
 /* GET about page. */
 router.get('/about', controllerData.about);
 
+/* GET contact page. */
+router.get('/contact', controllerData.contactme);
+
 module.exports = router;
 
