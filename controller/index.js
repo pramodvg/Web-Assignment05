@@ -1,6 +1,6 @@
 exports.index = function (req, res, next) {
     res.render('index', {
-        Title: 'Express',
+        Title: 'Hello',
         ParaText: 'This is First Paragraph'
     });
 }

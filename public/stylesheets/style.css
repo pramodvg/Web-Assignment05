@@ -1,0 +1,154 @@
+/* common css */
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #FBFBFB;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+section {
+  background-color: #FBFBFB;
+}
+
+/* loader */
+#loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 9999;
+}
+
+#loader-img {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background-image: url('../Photos/loading.gif');
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+/* nav */
+
+.navbar-brand{
+  color:#FBD31A;
+  font-size: 25px !important;
+  font-weight: 700;
+  margin-left: 100px;
+}
+.navbar-custom {
+    background-color: white;
+  height: 90px;
+    
+}
+
+
+.navitem ul li {
+  width: 140px;
+}
+
+.navitem {
+  width: 100%;
+}
+
+.navitem ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.navitem ul li:hover a {
+  color: #ffb633;
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+
+/* Home section */
+#home-section {
+  height: 100%;
+}
+.home-section-box {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+/* home left big texts */
+.home-section-textctr {
+  position: relative;
+  top: 12%;
+}
+.home-txt1 {
+  color: #707070;
+  font-size: 30px;
+  font-weight: 300;
+}
+.home-txt2 {
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 100px;
+  margin: 10px 0;
+}
+.home-txt2 strong {
+  color: #ffb633;
+}
+.home-txt3 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+/* profile circle image */
+.home-imgctr {
+  height: 100%;
+  width: 100%;
+}
+
+#home-myavtar {
+  border: 3px solid black;
+}
+
+#home-myavtar {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: 30%;
+  margin-left: 150px;
+}
+.home-btn-hire {
+  background-color: #ffb633;
+  color: white;
+  width: 200px;
+  height: 60px;
+  margin-top: 10px;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
