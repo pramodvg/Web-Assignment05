@@ -80,10 +80,7 @@ section {
   font-weight: 600;
 }
 
-.navitem ul li:hover a{
-  color: #ffb633;
-}
-
+.navitem ul li:hover a,
 .navitem ul li:active a,
 .navitem ul li a.active {
   color: #ffb633;
