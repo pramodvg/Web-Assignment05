@@ -24,14 +24,13 @@ h6 {
 section {
   background-color: #fbfbfb;
 }
-
+#error-section,
 #home-section,
 #about-section,
 #contact-section,
 #service-section {
   height: 100%;
   width: 100%;
-
 }
 
 /* loader */
@@ -94,6 +93,18 @@ section {
 .navitem ul li a.active {
   color: #ffb633;
   border-bottom: 1px solid #ffb633;
+}
+/* 404 page not found */
+
+.error-heading h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
 }
 
 /* Home section */
@@ -361,21 +372,21 @@ p {
 }
 
 /* Service section styling */
-.service-left-icon{
+.service-left-icon {
   margin-top: 50px;
 }
-.service-left-icon img{
+.service-left-icon img {
   position: relative;
   left: 50%;
-  transform: translateX(-50%) ;
-  -webkit-transform: translateX(-50%) ;
-  -moz-transform: translateX(-50%) ;
-  -ms-transform: translateX(-50%) ;
-  -o-transform: translateX(-50%) ;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 .service-item-content {
-position: relative;
-top: 15%;
+  position: relative;
+  top: 15%;
 }
 
 .service-right-text h5 {
@@ -396,7 +407,7 @@ top: 15%;
 /* hover effect on services right */
 .service-icons i {
   font-size: 35px;
-   margin-left: 20px;
+  margin-left: 20px;
   padding-top: 8px;
   transition: all 400ms ease-in-out;
   -webkit-transition: all 400ms ease-in-out;
@@ -411,12 +422,26 @@ top: 15%;
   -moz-transform: translateX(-30%);
   -ms-transform: translateX(-30%);
   -o-transform: translateX(-30%);
-  transition:all 400ms ease-in-out;
-  -webkit-transition:all 400ms ease-in-out;
-  -moz-transition:all 400ms ease-in-out;
-  -ms-transition:all 400ms ease-in-out;
-  -o-transition:all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
 }
-.service-item :hover h5{
-color: black;
+.service-item :hover h5 {
+  color: black;
+}
+
+/* Footer */
+#footer {
+  background-color: white;
+  padding: 25px;
+  border-top: 1px solid #ebebeb;
+}
+#footer p {
+  font-family: 'Open sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
 }
