@@ -6,6 +6,7 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -26,8 +27,11 @@ section {
 
 #home-section,
 #about-section,
-#contact-section {
+#contact-section,
+#service-section {
   height: 100%;
+  width: 100%;
+
 }
 
 /* loader */
@@ -109,6 +113,7 @@ section {
   color: #707070;
   font-size: 30px;
   font-weight: 300;
+  margin-left: 8px;
 }
 .home-txt2 {
   font-size: 90px;
@@ -122,6 +127,7 @@ section {
 .home-txt3 {
   font-weight: 600;
   font-size: 40px;
+  margin-left: 10px;
 }
 
 /* profile circle image */
@@ -144,7 +150,12 @@ section {
   width: 440px;
   position: relative;
   top: 25%;
-  margin-left: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 .home-btn-hire {
   background-color: #ffb633;
@@ -152,6 +163,7 @@ section {
   width: 200px;
   height: 60px;
   margin-top: 10px;
+  margin-left: 15px;
   border: none;
   font-size: 17px;
   font-weight: 700;
@@ -184,7 +196,7 @@ section {
 /* left section text */
 .about-section-textctr,
 .about-section2-textctr {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .about-section2-textctr {
   margin-left: 10px;
@@ -204,7 +216,7 @@ section {
 }
 
 /* Contact me css */
-.aboutus-details{
+.aboutus-details {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -217,12 +229,12 @@ section {
   padding: 0;
   list-style: none;
 }
-.aboutus-details > p{
-  margin-left: 3px; 
+.aboutus-details > p {
+  margin-left: 3px;
 }
-.about-datalist h6{
+.about-datalist h6 {
   margin-left: 10px;
- padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 .about-datalist ul li i {
   font-size: 20px;
@@ -264,7 +276,7 @@ section {
   -o-transition: all 400ms linear;
 }
 
-.about-scoicon ul.socialicon{
+.about-scoicon ul.socialicon {
   margin: 0 !important;
 }
 
@@ -283,9 +295,10 @@ ul.socialicon li:nth-child(3) a:hover {
   color: white;
   border-color: transparent;
 }
-.form-box{
+.form-box {
   position: relative;
   top: 50%;
+  background-color: white;
   transform: translateY(-40%);
   -webkit-transform: translateY(-40%);
   -moz-transform: translateY(-40%);
@@ -294,7 +307,8 @@ ul.socialicon li:nth-child(3) a:hover {
   box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.1);
   padding: 15px;
 }
-.form-box h3,p{
+.form-box h3,
+p {
   margin-left: 22px;
   padding: 0;
 }
@@ -328,7 +342,7 @@ ul.socialicon li:nth-child(3) a:hover {
   -ms-transition: all 400ms;
   -o-transition: all 400ms;
 }
-.form-btn button:hover{
+.form-btn button:hover {
   background-color: white;
   border: 2px solid #ffb633;
   color: #ffb633;
@@ -344,4 +358,65 @@ ul.socialicon li:nth-child(3) a:hover {
 .btn.active:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+/* Service section styling */
+.service-left-icon{
+  margin-top: 50px;
+}
+.service-left-icon img{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%) ;
+  -webkit-transform: translateX(-50%) ;
+  -moz-transform: translateX(-50%) ;
+  -ms-transform: translateX(-50%) ;
+  -o-transform: translateX(-50%) ;
+}
+.service-item-content {
+position: relative;
+top: 15%;
+}
+
+.service-right-text h5 {
+  color: #ffc400;
+  font-weight: 600;
+  margin: 0;
+}
+.service-right-text h4 {
+  font-weight: 600;
+  margin: 0;
+}
+.service-right-text p {
+  margin-left: 0;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* hover effect on services right */
+.service-icons i {
+  font-size: 35px;
+   margin-left: 20px;
+  padding-top: 8px;
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+}
+.service-item :hover i {
+  color: #ffc400;
+  transform: translateX(-30%);
+  -webkit-transform: translateX(-30%);
+  -moz-transform: translateX(-30%);
+  -ms-transform: translateX(-30%);
+  -o-transform: translateX(-30%);
+  transition:all 400ms ease-in-out;
+  -webkit-transition:all 400ms ease-in-out;
+  -moz-transition:all 400ms ease-in-out;
+  -ms-transition:all 400ms ease-in-out;
+  -o-transition:all 400ms ease-in-out;
+}
+.service-item :hover h5{
+color: black;
 }

@@ -12,3 +12,7 @@ exports.about = (req, res, next) => {
 exports.contactme = (req, res, next) => {
     res.render('contactme', { Title: 'Contact Me', activeContact: true })
 }
+
+exports.services = (req, res, next) => {
+    res.render('services', { Title: 'Services', activeServices: true })
+}
