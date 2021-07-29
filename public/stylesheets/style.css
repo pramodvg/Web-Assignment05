@@ -244,9 +244,9 @@ color: #ffb633 !important;
   height: 40px;
   width: 40px;
   text-align: center;
-  line-height: 39px;
   color: black;
   display: inline-block;
+  padding-top: 12px;
   border-radius: 50%;
   border: 1px solid black;
   -webkit-border-radius: 50%;
@@ -378,9 +378,14 @@ p {
 }
 
 /* hover effect on services right */
+.service-item [class*="col-md-2"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center;
+  }
+
 .service-icons i {
   font-size: 35px;
-  margin-left: 20px;
   padding-top: 8px;
   transition: all 400ms ease-in-out;
   -webkit-transition: all 400ms ease-in-out;
@@ -388,7 +393,7 @@ p {
   -ms-transition: all 400ms ease-in-out;
   -o-transition: all 400ms ease-in-out;
 }
-.service-item :hover i {
+.service-item:hover i {
   color: #ffc400;
   transform: translateX(-30%);
   -webkit-transform: translateX(-30%);
@@ -401,7 +406,7 @@ p {
   -ms-transition: all 400ms ease-in-out;
   -o-transition: all 400ms ease-in-out;
 }
-.service-item :hover h5 {
+.service-item:hover h5 {
   color: black;
 }
 
