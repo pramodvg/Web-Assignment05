@@ -6,11 +6,11 @@ exports.index = function (req, res, next) {
 }
 
 exports.about = (req, res, next) => {
-    res.render('about', { Title: 'About Me', activeAbout: true })
+    res.render('about', { Title: 'About', activeAbout: true })
 }
 
 exports.contactme = (req, res, next) => {
-    res.render('contactme', { Title: 'Contact Me', activeContact: true })
+    res.render('contactme', { Title: 'Contact', activeContact: true })
 }
 
 exports.services = (req, res, next) => {
@@ -18,5 +18,5 @@ exports.services = (req, res, next) => {
 }
 
 exports.portfolio = (req, res, next) => {
-    res.render('portfolio', { Title: 'Services', activePortfolio: true })
+    res.render('portfolio', { Title: 'Portfolio', activePortfolio: true })
 }
