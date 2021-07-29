@@ -1,79 +1,81 @@
-<!DOCTYPE html>
 <html>
   <head>
     <title>{{Title}}</title>
-
-    {{!-- online icon --}}
-     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    <!-- important meta tags -->
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE-edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    {{! online icon }}
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
     />
-  
 
     <!-- Yeti Bootstrap Theme from bootswatch.com -->
-    <link rel='stylesheet' href="/stylesheets/bootstrap.min.css"/>
+    <link
+      rel='stylesheet'
+      href='/stylesheets/bootstrap/css/bootstrap.min.css'
+    />
 
-    
-    {{!-- css for html --}}
+    {{! css for html }}
     <link rel='stylesheet' href='/stylesheets/style.css' />
 
-     
-        {{!-- responsiveness css for html --}}
+    {{! responsiveness css for html }}
     <link rel='stylesheet' href='/stylesheets/responsive.css' />
-    
+
     <!-- Navbar Bootstrap 4 code from w3schools -->
-    <!-- A grey horizontal navbar that becomes vertical on small screens -->
-    <nav class="navbar navbar-custom navbar-expand-lg">
-      <div class="container-fluid">
-        <div class="site-nav-wrapper">
-    
-          <div class="navbar-header">
-            <a class="navbar-brand" href="/">
-              Pramod Vaghasia
-            </a>
-          </div>
-    
-        </div>
-      </div>
-    
-      <div class="navitem navbar-collapse">
-        <ul class="navbar-nav">
-          <li>
-            <a href="/" class="{{#if activeHome}}active{{else}}''{{/if}}">Home</a>
+    <nav class='navbar navbar-expand-lg navbar-light bg-light'>
+      <a class='navbar-brand' href='/'>Pramod Vaghasia</a>
+      <button
+        class='navbar-toggler'
+        type='button'
+        data-toggle='collapse'
+        data-target='#mynavigation'
+
+      >
+        <span class='navbar-toggler-icon'></span>
+      </button>
+
+      <div class='collapse navbar-collapse' id='mynavigation'>
+        <ul class='navbar-nav ml-auto'>
+          <li class='nav-item {{#if activeHome}}active{{else}}''{{/if}}' >
+            <a class='nav-link' href="/">Home</a>
           </li>
-          <li>
-            <a href="/about" class="{{#if activeAbout}}active{{else}}''{{/if}}">About</a>
+          <li class='nav-item {{#if activeAbout}}active{{else}}''{{/if}}'>
+            <a class='nav-link' href="/about">About</a>
           </li>
-          <li>
-            <a href="/resume">Resume</a>
+          <li class='nav-item'>
+            <a class='nav-link' href="/resume">Resume</a>
           </li>
-          <li>
-            <a href="/service" class="{{#if activeServices}}active{{else}}''{{/if}}">Service</a>
+          <li class='nav-item {{#if activeServices}}active{{else}}''{{/if}}'>
+            <a class='nav-link' href="/service">Service</a>
           </li>
-          <li>
-            <a href="/portfolio" class="{{#if activePortfolio}}active{{else}}''{{/if}}">Portfolio</a>
+          <li class='nav-item {{#if activePortfolio}}active{{else}}''{{/if}}'>
+            <a class='nav-link' href="/portfolio">Portfolio</a>
           </li>
-          <li>
-            <a href="/contact" class="{{#if activeContact}}active{{else}}''{{/if}}">Contact</a>
+          <li class='nav-item {{#if activeContact}}active{{else}}''{{/if}}'>
+            <a class='nav-link' href="/contact">Contact</a>
           </li>
         </ul>
+      
       </div>
-    
-    
     </nav>
-
-
+   
   </head>
   <body>
     {{{body}}}
-    <section>
+     <section>
  <footer id="footer">
       <p>
         Copyright @ 2021 All Rights Reserved By <strong>Pramod Vaghasia.</strong>
       </p>
     </footer>
 
-    </section>
-   
+    </section> 
+    <script
+      type='text/javascript'
+      src='/stylesheets/bootstrap/js/bootstrap.min.js'
+    ></script>
+
   </body>
 </html>
