@@ -2,13 +2,24 @@
 <html>
   <head>
     <title>{{Title}}</title>
+
+    {{!-- online icon --}}
      <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+  
+
     <!-- Yeti Bootstrap Theme from bootswatch.com -->
     <link rel='stylesheet' href="/stylesheets/bootstrap.min.css"/>
+
+    
+    {{!-- css for html --}}
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+     
+        {{!-- responsiveness css for html --}}
+    <link rel='stylesheet' href='/stylesheets/responsive.css' />
     
     <!-- Navbar Bootstrap 4 code from w3schools -->
     <!-- A grey horizontal navbar that becomes vertical on small screens -->
@@ -40,7 +51,7 @@
             <a href="/service" class="{{#if activeServices}}active{{else}}''{{/if}}">Service</a>
           </li>
           <li>
-            <a href="/portfolio">Portfolio</a>
+            <a href="/portfolio" class="{{#if activePortfolio}}active{{else}}''{{/if}}">Portfolio</a>
           </li>
           <li>
             <a href="/contact" class="{{#if activeContact}}active{{else}}''{{/if}}">Contact</a>
@@ -55,11 +66,14 @@
   </head>
   <body>
     {{{body}}}
-    <footer id="footer">
+    <section>
+ <footer id="footer">
       <p>
         Copyright @ 2021 All Rights Reserved By <strong>Pramod Vaghasia.</strong>
       </p>
     </footer>
 
+    </section>
+   
   </body>
 </html>

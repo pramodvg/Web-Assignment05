@@ -14,5 +14,9 @@ router.get('/contact', controllerData.contactme);
 /* GET service page. */
 router.get('/service', controllerData.services);
 
+
+/* GET portfolio page. */
+router.get('/portfolio', controllerData.portfolio);
+
 module.exports = router;
 

@@ -1,0 +1,126 @@
+/* large devices (desktops and laptop) */
+@media (min-width: 1200px) and (max-width: 1299px) {
+}
+
+/* medium devices (landscape tablets) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* small devices (potrait tab and small desktop) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* index page */
+  .home-txt2 {
+    font-size: 65px;
+    line-height: 80px;
+  }
+  .home-txt2 strong {
+    color: #ffb633;
+  }
+  .home-txt3 {
+    font-weight: 600;
+    font-size: 26px;
+  }
+
+  #home-myavtar {
+    height: 220px;
+    width: 320px;
+  }
+
+
+
+}
+
+/* extra small devices (landscap phones and tab) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  #service-section {
+    height: auto;
+  }
+
+  /* index page */
+  .home-section-textctr {
+    position: relative;
+    top: 12%;
+    text-align: center;
+  }
+  .home-txt1 {
+    font-size: 25px;
+  }
+  .home-txt2 {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .home-txt2 strong {
+    color: #ffb633;
+  }
+  .home-txt3 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #home-myavtar {
+    height: 220px;
+    width: 320px;
+  }
+
+    /* sevice page */
+  .service-item-content {
+  top: 0%;
+}
+
+}
+
+@media (max-width: 575px){
+  /* sections  */
+  #error-section,
+  #home-section,
+  #about-section,
+  #contact-section,
+  #service-section,
+  #portfolio-section {
+    height: auto;
+  }
+
+   /* index page */
+  .home-section-textctr {
+    top: 0%;
+    text-align: center;
+  }
+  .home-txt1 {
+    font-size: 25px;
+  }
+  .home-txt2 {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .home-txt2 strong {
+    color: #ffb633;
+  }
+  .home-txt3 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #home-myavtar {
+    height: 220px;
+    width: 320px;
+    top: 0%;
+    margin: 30px 0 30px 0;
+  }
+
+   /* sevice page */
+  .service-item-content {
+  top: 0%;
+}
+
+/* contact me */
+.form-box {
+  margin: 30px 0 30px 0;
+  top: 0%;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+
+}
+}

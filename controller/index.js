@@ -16,3 +16,7 @@ exports.contactme = (req, res, next) => {
 exports.services = (req, res, next) => {
     res.render('services', { Title: 'Services', activeServices: true })
 }
+
+exports.portfolio = (req, res, next) => {
+    res.render('portfolio', { Title: 'Services', activePortfolio: true })
+}
