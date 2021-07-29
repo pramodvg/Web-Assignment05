@@ -209,8 +209,12 @@ color: #ffb633 !important;
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
 }
+.about-datalist h5{
+  font-weight: 600;
+}
 .about-datalist ul {
   padding: 0;
+  margin-top: 20px;
   list-style: none;
 }
 .aboutus-details > p {
@@ -221,6 +225,7 @@ color: #ffb633 !important;
   padding-bottom: 5px;
 }
 .about-datalist ul li i {
+  color: #707070;
   font-size: 20px;
   text-align: center;
   width: 30px;
@@ -237,7 +242,8 @@ color: #ffb633 !important;
 }
 .about-scoicon ul li {
   display: inline-block;
-  padding: 0;
+  padding: 5px;
+
 }
 .about-scoicon ul li a {
   padding: 0;

@@ -81,6 +81,12 @@
     height: auto;
   }
 
+  /* nav brand name */
+   .navbar-brand {
+  font-size: 22px !important;
+  margin-left: 25px;
+}
+
    /* index page */
   .home-section-textctr {
     top: 0%;
@@ -88,6 +94,7 @@
   }
   .home-txt1 {
     font-size: 25px;
+    margin-top: 10px;
   }
   .home-txt2 {
     font-size: 48px;
