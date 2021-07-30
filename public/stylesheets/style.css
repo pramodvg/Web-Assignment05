@@ -31,17 +31,28 @@ section {
 #portfolio-section {
   height: 100%;
   width: 100%;
+  padding-bottom: 20px;
 }
 
 /* nav */
 .navbar{
   height: 90px;
+  z-index: 999;
+  padding: 0 !important;
   background-color: white !important;
 }
 .nav-item{
- margin-right: 50px;
+padding-right: 25px;
+padding-left: 25px;
+}
+.navbar-toggler{
+  margin: 10px !important;
+}
+ul.navbar-nav > li{
+  background-color: white;
 }
 .navbar-nav a {
+  border-bottom: 1px solid transparent ;   
   font-size: 15px;
   font-weight: 600;
   display: block;
@@ -297,11 +308,7 @@ ul.socialicon li:nth-child(3) a:hover {
   box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.1);
   padding: 15px;
 }
-.form-box h3,
-p {
-  margin-left: 22px;
-  padding: 0;
-}
+
 
 .form-box .row [class*='form-'] {
   margin-top: 15px !important;
