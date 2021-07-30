@@ -17,6 +17,11 @@
     height: auto;
   }
 
+  /* home left big texts */
+.home-section-textctr {
+  top: 2%;
+}
+
   /* index page */
   .home-txt2 {
     font-size: 65px;
