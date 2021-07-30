@@ -34,6 +34,19 @@
     height: 220px;
     width: 320px;
   }
+/* form box */
+.form-box {
+  top: 2%;
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+}
+  /* service right texts */
+  .service-item-content {
+  top: 3%;
+}
 }
 
 /* extra small devices (landscap phones and tab) */
@@ -72,6 +85,16 @@
     height: 220px;
     width: 320px;
   }
+
+  /* form box */
+.form-box {
+  top: 2%;
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+}
 
   /* sevice page */
   .service-item-content {
