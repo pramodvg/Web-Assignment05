@@ -8,6 +8,15 @@
 
 /* small devices (potrait tab and small desktop) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+    #error-section,
+  #home-section,
+  #about-section,
+  #contact-section,
+  #service-section,
+  #portfolio-section {
+    height: auto;
+  }
+
   /* index page */
   .home-txt2 {
     font-size: 65px;
@@ -29,7 +38,13 @@
 
 /* extra small devices (landscap phones and tab) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  #service-section {
+  /* sections  */
+  #error-section,
+  #home-section,
+  #about-section,
+  #contact-section,
+  #service-section,
+  #portfolio-section {
     height: auto;
   }
 
@@ -91,15 +106,15 @@
     margin-top: 10px;
   }
   .home-txt2 {
-    font-size: 48px;
-    line-height: 50px;
+    font-size: 52px;
+    line-height: 55px;
   }
   .home-txt2 strong {
     color: #ffb633;
   }
   .home-txt3 {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
   }
   #home-myavtar {
     height: 220px;
