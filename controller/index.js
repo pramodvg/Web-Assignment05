@@ -1,12 +1,15 @@
+const mData = require('../model/indexdata')
+
 exports.index = function (req, res, next) {
     res.render('index', {
         Title: 'Home',
-        activeHome: true
+        activeHome: true,
+        data: mData
     });
 }
 
 exports.about = (req, res, next) => {
-    res.render('about', { Title: 'About', activeAbout: true })
+    res.render('about', { Title: 'About', activeAbout: true, data: mData.maboutData })
 }
 
 exports.contactme = (req, res, next) => {
@@ -14,9 +17,9 @@ exports.contactme = (req, res, next) => {
 }
 
 exports.services = (req, res, next) => {
-    res.render('services', { Title: 'Services', activeServices: true })
+    res.render('services', { Title: 'Services', activeServices: true, data: mData.mserviceData })
 }
 
 exports.portfolio = (req, res, next) => {
-    res.render('portfolio', { Title: 'Portfolio', activePortfolio: true })
+    res.render('portfolio', { Title: 'Portfolio', activePortfolio: true, data: mData.mportfolioData })
 }

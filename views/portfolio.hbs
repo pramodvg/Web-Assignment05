@@ -1,39 +1,17 @@
 <section id='portfolio-section'>
   <div class='container'>
     <div class='row'>
+       {{#each data}}
       <div class='col-md-4 col-sm-4'>
         <div class='port-content'>
-          <img src='/Photos/appwork.jpg' class='img-fluid' />
+          <img src='{{this.imglink}}' class='img-fluid' />
           <div class='port-overly'>
-            <h3>Android App</h3>
-            Photo by <a href="https://unsplash.com/@balazsketyi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Balázs Kétyi</a> on <a href="https://unsplash.com/s/photos/application?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-    
+            <h3>{{this.title}}</h3>
+            Photo by <a href="{{this.link1}}">{{this.author}}</a> on <a href="{{this.link2}}">Unsplash</a>
           </div>
         </div>
       </div>
-      <div class='col-md-4 col-sm-4'>
-        <div class='port-content'>
-          <img src='/Photos/webwork.jpg' class='img-fluid' />
-          <div class='port-overly'>
-            <h3>Website Development</h3>
-           Photo by <a href="https://unsplash.com/@le_buzz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Le Buzz</a> on <a href="https://unsplash.com/s/photos/website?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-    
-          </div>
-        </div>
-      </div>
-      <div class='col-md-4 col-sm-4'>
-        <div class='port-content'>
-          <img src='/Photos/ioswork.jpg' class='img-fluid' />
-          <div class='port-overly'>
-            <h3>Android App</h3>
-           Photo by <a href="https://unsplash.com/@pemmax?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Przemyslaw Marczynski</a> on <a href="https://unsplash.com/s/photos/ios-application?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-    
-            
-          </div>
-        </div>
-      </div>
+      {{/each}}
     </div>
   </div>
 </section>

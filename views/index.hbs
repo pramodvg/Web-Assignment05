@@ -28,7 +28,6 @@
     </div>
   </div>
 </section>
-
 <!-- about sectioln -->
 <section id='home-about-section'>
   <div class='about-section-box'>
@@ -42,63 +41,12 @@
           <div class='about-section-textctr'>
             <div class='container'>
               <div class='row'>
-                <div class='col-md-12'>
-                  <p class='about-txt1'>Introduction :</p>
-                  <p class='about-txt2'>Hi, my name is Pramod and I am a Web and
-                    Mobile Application Developer. I have over 2 years of
-                    experience in this fields in which I have Developed many
-                    Android Applications like Fitness App, Video Status App,
-                    Live Cricket Score App apartfrom this I have developed many
-                    small Tools apps which is usefull daily tasks. I have
-                    bachlors degree of Bachlors Of Computer Application (BCA)
-                    from Sutex Bank College in India.
-                  </p>
-                </div>
-                <div class='col-md-12'><p class='about-txt1'>Android Application
-                    Development :</p>
-                  <p class='about-txt2'>I am familiar with Android studio, Java,
-                    Apis, Firebase and Notification, Background services,
-                    Android Libraries like Retrofit, Glide, Google Play Services
-                    and many more. Moreover, I can develop fully functional app
-                    using android widgets like Recyclerview, Gridview,
-                    Progressbar, ListView,Custom Dialogues, MySQLite database,
-                    Firebase Notification etc. So that's it I hope now you have
-                    clear idea about my work.
-                  </p>
-
-                </div>
-                <div class='col-md-12'>
-                  <p class='about-txt1'>Web Application Development :</p>
-                  <p class='about-txt2'>I am a MERN stack developer. MERN stands
-                    for MongoDB, Express, React, Node, after the four key
-                    technologies that make up the stack.
-                  </p>
-                </div>
-                <div class='col-md-12'>
-                  <p class='about-txt1'>Current Status :</p>
-                  <p class='about-txt2'>
-                    I am actively working on mobile and web application
-                    development as a freelancer as I am pursuing my studies at
-                    Conestoga College. I took a Mobile Application development
-                    course which gives me wide exposure to different
-                    technologies which enhance my skills and prepare me for
-                    getting a job in this competitive market.
-                  </p>
-                </div>
-                <div class='col-md-12'>
-                  <p class='about-txt1'>Future Goals :</p>
-                  <p class='about-txt2'>Learning new skills is part of a
-                    software developer’s role due to the frequent changes and
-                    advancements in technology and frameworks. However, just
-                    learning programming skills isn’t enough if you want to
-                    succeed and get ahead in your software developer’s career so
-                    I started working on other skills like communication skill,
-                    Management skill and many other skills which will give me
-                    advantage over others and stand out separately. I want to
-                    become a part of a organization where everyone share there
-                    ideas and turn those ideas into reality.
-                  </p>
-                </div>
+                {{#each data.maboutData}}
+                  <div class='col-md-12'>
+                    <p class='about-txt1'>{{this.title}}</p>
+                    <p class='about-txt2'>{{this.description}}</p>
+                  </div>
+                {{/each}}
               </div>
             </div>
 
@@ -141,72 +89,25 @@
           </div>
           <div class='col-md-5'>
             <div class='service-item-content'>
-
-              <div class='service-item'>
-                <div class='row'>
-                  <div class='col-md-2'>
-                    <div class='service-icons'>
-                      <i class='fa fa-globe'></i>
+              {{#each data.mserviceData}}
+                <div class='service-item'>
+                  <div class='row'>
+                    <div class='col-md-2'>
+                      <div class='service-icons'>
+                        <i class='fa fa-globe'></i>
+                      </div>
                     </div>
-                  </div>
-                  <div class='col-md-10'>
-                    <div class='service-right-text'>
-                      <h5>Service 1</h5>
-                      <h4>Web Development</h4>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Assumenda qui, animi natus consequatur quas
-                        repellendus voluptatum accusantium vel ullam laboriosam
-                        itaque voluptatibus recusandae, repudiandae alias
-                        reprehenderit iure beatae maiores molestiae.</p>
-                    </div>
+                    <div class='col-md-10'>
+                      <div class='service-right-text'>
+                        <h5>{{this.title1}}</h5>
+                        <h4>{{this.title2}}</h4>
+                        <p>{{this.description}}</p>
+                      </div>
 
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div class='service-item'>
-                <div class='row'>
-                  <div class='col-md-2'>
-                    <div class='service-icons'>
-                      <i class='fa fa-android'></i>
-                    </div>
-                  </div>
-                  <div class='col-md-10'>
-                    <div class='service-right-text'>
-                      <h5>Service 2</h5>
-                      <h4>Android Application</h4>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Assumenda qui, animi natus consequatur quas
-                        repellendus voluptatum accusantium vel ullam laboriosam
-                        itaque voluptatibus recusandae, repudiandae alias
-                        reprehenderit iure beatae maiores molestiae.</p>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class='service-item'>
-                <div class='row'>
-                  <div class='col-md-2'>
-                    <div class='service-icons'>
-                      <i class='fa fa-apple'></i>
-                    </div>
-                  </div>
-                  <div class='col-md-10'>
-                    <div class='service-right-text'>
-                      <h5>Service 3</h5>
-                      <h4>IOS Application</h4>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Assumenda qui, animi natus consequatur quas
-                        repellendus voluptatum accusantium vel ullam laboriosam
-                        itaque voluptatibus recusandae, repudiandae alias
-                        reprehenderit iure beatae maiores molestiae.</p>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
+              {{/each}}
 
             </div>
 
@@ -225,57 +126,20 @@
       <h2>My WORK</h2>
     </div>
     <div class='row'>
-      <div class='col-md-4 col-sm-4'>
-        <div class='port-content'>
-          <img src='/Photos/appwork.jpg' class='img-fluid' />
-          <div class='port-overly'>
-            <h3>Android App</h3>
-            Photo by
-            <a
-              href='https://unsplash.com/@balazsketyi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
-            >Balázs Kétyi</a>
-            on
-            <a
-              href='https://unsplash.com/s/photos/application?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
-            >Unsplash</a>
-
+      {{#each data.mportfolioData}}
+        <div class='col-md-4 col-sm-4'>
+          <div class='port-content'>
+            <img src='{{this.imglink}}' class='img-fluid' />
+            <div class='port-overly'>
+              <h3>{{this.title}}</h3>
+              Photo by
+              <a href='{{this.link1}}'>{{this.author}}</a>
+              on
+              <a href='{{this.link2}}'>Unsplash</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class='col-md-4 col-sm-4'>
-        <div class='port-content'>
-          <img src='/Photos/webwork.jpg' class='img-fluid' />
-          <div class='port-overly'>
-            <h3>Website Development</h3>
-            Photo by
-            <a
-              href='https://unsplash.com/@le_buzz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
-            >Le Buzz</a>
-            on
-            <a
-              href='https://unsplash.com/s/photos/website?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
-            >Unsplash</a>
-
-          </div>
-        </div>
-      </div>
-      <div class='col-md-4 col-sm-4'>
-        <div class='port-content'>
-          <img src='/Photos/ioswork.jpg' class='img-fluid' />
-          <div class='port-overly'>
-            <h3>Android App</h3>
-            Photo by
-            <a
-              href='https://unsplash.com/@pemmax?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
-            >Przemyslaw Marczynski</a>
-            on
-            <a
-              href='https://unsplash.com/s/photos/ios-application?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
-            >Unsplash</a>
-
-          </div>
-        </div>
-      </div>
+      {{/each}}
     </div>
   </div>
 </section>
