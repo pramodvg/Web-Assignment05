@@ -66,7 +66,8 @@ module.exports = {
                 author: "Przemyslaw Marczynski"
             },
         ]
-    },
+    }
+    
 }
 
 
