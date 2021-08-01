@@ -38,21 +38,25 @@ section {
   height: 90px;
   z-index: 999;
   padding: 0 !important;
-  padding-right: 40px !important;
   background-color: white !important;
+}
+.navbar-toggler{
+  margin-right: 30px;
 }
 .nav-item {
   padding-right: 25px;
   padding-left: 25px;
 }
-.navbar-toggler {
-  margin: 10px !important;
-}
+
 ul.navbar-nav > li {
   background-color: white;
 }
+.navbar-collapse{
+  padding-right: 40px !important;
+  background-color: white !important;
+}
 .navbar-nav a {
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid white;
   font-size: 15px;
   font-weight: 600;
   display: block;
