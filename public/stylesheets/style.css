@@ -40,7 +40,7 @@ section {
   padding: 0 !important;
   background-color: white !important;
 }
-.navbar-toggler{
+.navbar-toggler {
   margin-right: 30px;
 }
 .nav-item {
@@ -51,7 +51,7 @@ section {
 ul.navbar-nav > li {
   background-color: white;
 }
-.navbar-collapse{
+.navbar-collapse {
   padding-right: 40px !important;
   background-color: white !important;
 }
@@ -67,6 +67,7 @@ ul.navbar-nav > li {
   -ms-transition: 0.1s linear;
   -o-transition: 0.1s linear;
 }
+/* https://www.w3schools.com/cssref/sel_hover.asp */
 .navbar-nav a:hover {
   color: #ffb633 !important;
   border-bottom: 1px solid #ffb633;
@@ -196,6 +197,7 @@ ul.navbar-nav > li {
 }
 
 /* hire me button */
+/* https://www.w3schools.com/cssref/sel_hover.asp */
 .home-btn-hire:hover {
   transition: all 200ms linear;
   border: 2px solid #ffb633;
@@ -312,7 +314,7 @@ ul.navbar-nav > li {
 .about-scoicon ul.socialicon {
   margin: 0 !important;
 }
-
+/* https://www.w3schools.com/cssref/sel_hover.asp */
 ul.socialicon li:nth-child(1) a:hover {
   background: #3b5998;
   color: white;
@@ -370,6 +372,7 @@ ul.socialicon li:nth-child(3) a:hover {
   -ms-transition: all 400ms;
   -o-transition: all 400ms;
 }
+/* https://www.w3schools.com/cssref/sel_hover.asp */
 .form-btn button:hover {
   background-color: white;
   border: 2px solid #ffb633;
@@ -424,7 +427,6 @@ ul.socialicon li:nth-child(3) a:hover {
   margin-top: 10px;
 }
 
-/* hover effect on services right */
 .service-item [class*='col-md-2'] {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -440,6 +442,9 @@ ul.socialicon li:nth-child(3) a:hover {
   -ms-transition: all 400ms ease-in-out;
   -o-transition: all 400ms ease-in-out;
 }
+
+/* hover effect on services right */
+/* https://www.w3schools.com/cssref/sel_hover.asp */
 .service-item:hover i {
   color: #ffc400;
   transform: translateX(-30%);
@@ -475,8 +480,9 @@ a {
   color: #707070;
   padding: 10px;
 }
-.footer-links a:hover, .footer-links a:hover i{
- color: #ffb633;
+.footer-links a:hover,
+.footer-links a:hover i {
+  color: #ffb633;
   text-decoration: none;
 }
 
@@ -534,7 +540,9 @@ a {
 .port-overly a {
   font-size: 10px;
 }
-.port-content:hover .port-overly {
+
+/* /* hover effect on services right */
+*/ .port-content:hover .port-overly {
   height: 100%;
 }
 .port-content:hover img {
