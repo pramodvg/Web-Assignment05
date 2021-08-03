@@ -4,7 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// content pages routes
 var indexRouter = require('./routes/index');
+
+// error pages routes
 var errorRouter = require('./routes/errors');
 
 

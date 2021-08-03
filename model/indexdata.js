@@ -1,4 +1,5 @@
 module.exports = {
+    // list deta model for service page
     mserviceData: () => {
         return [{
             title1: "Service 1",
@@ -17,6 +18,7 @@ module.exports = {
         }]
 
     },
+    // list data model for about page
     maboutData: () => {
 
         return [
@@ -42,6 +44,7 @@ module.exports = {
             },
         ]
     },
+    // list data model for portfolio page
     mportfolioData: () => {
         return [
             {
