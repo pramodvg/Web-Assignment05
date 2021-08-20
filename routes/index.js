@@ -18,5 +18,16 @@ router.get('/service', controllerData.services);
 /* GET portfolio page. */
 router.get('/portfolio', controllerData.portfolio);
 
+// ***************************************************** //
+// ************ Insert Data In To MongoDB ************** //
+/* GET add service data. */
+router.get('/add-service', controllerData.add_servicesdata);
+
+/* GET add service data. */
+router.get('/add-portfolio', controllerData.add_portfoliodata);
+
+/* GET add about data. */
+router.get('/add-about', controllerData.add_aboutdata);
+
 module.exports = router;
 

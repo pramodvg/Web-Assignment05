@@ -1,4 +1,22 @@
-module.exports = {
+const mongoose = require('mongoose');
+const schema = mongoose.Schema;
+
+const serviceSchema = new schema(
+    {
+        title1: { type: String, required: true },
+        title2: { type: String, required: true },
+        description: { type: String, required: true },
+    }
+    , {
+        timestamps: true
+    }
+);
+
+const Portfolliodata = mongoose.model('Portfolliodata', serviceSchema)
+
+exports.portDAta = Portfolliodata;
+
+exports.allData = {
     // list deta model for service page
     mserviceData: () => {
         return [{
@@ -70,7 +88,8 @@ module.exports = {
             },
         ]
     }
-    
+
 }
+
 
 
