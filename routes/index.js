@@ -5,8 +5,8 @@ const pusherData = require('../controller/pushers')
 
 /* GET home page. */
 router.get('/', controllerData.index);
+router.post('/', pusherData.constactpost);
 /* POST home page. */
-router.post('/home', controllerData.indextpost);
 router.get('/home', controllerData.index);
 
 /* GET about page. */
@@ -14,6 +14,7 @@ router.get('/about', controllerData.about);
 
 /* GET contact page. */
 router.get('/contact', controllerData.contactme);
+
 
 
 /* GET service page. */

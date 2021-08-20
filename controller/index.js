@@ -13,15 +13,6 @@ exports.index = function (req, res, next) {
 
 }
 
-exports.indextpost = (req, res, next) => {
-
-    pusherdata.pusher.trigger("my-channel", "my-event", {
-        Msg: "hello"
-    });
-    res.redirect('/');
-
-
-}
 
 exports.about = (req, res, next) => {
     Aboutdata.aboutData.find()
