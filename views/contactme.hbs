@@ -56,14 +56,16 @@
         </div>
         <div class='col-md-6'>
           <div class='form-box'>
-            <h3>Contact Me</h3>
+            <h3 id="mdatax">Contact Me</h3>
             <p>
               Fill below form to get in touch with me.
             </p>
-            <div class='container'>
+            <form action="/home" id="submit-form" method="POST">
+  <div class='container'>
               <div class='row'>
                 <div class='col-md-6'>
                   <input
+                    name='mName'
                     class='form-control form-control-sm'
                     type='text'
                     placeholder='Your Name'
@@ -100,13 +102,15 @@
                 </div>
                 <div class='col-md-12'>
                   <div class='form-btn'>
-                    <button type='button' class='btn btn-general'>
+                    <button type='submit' class='btn btn-general'>
                       &nbsp; Submit &nbsp;
                     </button>
                   </div>
                 </div>
               </div>
             </div>
+            </form>
+          
           </div>
         </div>
       </div>

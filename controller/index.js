@@ -2,6 +2,7 @@ const Portfolliodata = require('../model/indexdata')
 const Servicedata = require('../model/servicedata/servicedata')
 const Portfoliodata = require('../model/potfolliodata/portfolliodata')
 const Aboutdata = require('../model/aboutdata/aboutdata')
+const pusherdata = require('./pushers')
 
 exports.index = function (req, res, next) {
     res.render('index', {
@@ -9,20 +10,34 @@ exports.index = function (req, res, next) {
         activeHome: true,
         data: Portfolliodata.allData
     });
+
+}
+
+exports.indextpost = (req, res, next) => {
+
+    pusherdata.pusher.trigger("my-channel", "my-event", {
+        Msg: "hello"
+    });
+    res.redirect('/');
+
+
 }
 
 exports.about = (req, res, next) => {
     Aboutdata.aboutData.find()
-    .then((result)=>{
-        res.render('about', { Title: 'About', activeAbout: true, data: result})
-    })
-    .catch((error)=>{
-        console.log("error in about page : " + error)
-    })
+        .then((result) => {
+            res.render('about', { Title: 'About', activeAbout: true, data: result })
+        })
+        .catch((error) => {
+            console.log("error in about page : " + error)
+        })
 }
 
 exports.contactme = (req, res, next) => {
     res.render('contactme', { Title: 'Contact', activeContact: true })
+}
+exports.contactmepost = (req, res, next) => {
+    return res.redirect('/contact');
 }
 
 exports.services = (req, res, next) => {
@@ -62,13 +77,13 @@ exports.add_servicesdata = (req, res) => {
 }
 exports.add_aboutdata = (req, res) => {
     const aboutdata = new Aboutdata.aboutData(
-       
+
         {
             title: "Future Goals :",
             description: "Learning new skills is part of a software developer’s role due to the frequent changes and advancements in technology and frameworks. However, just learning programming skills isn’t enough if you want to succeed and get ahead in your software developer’s career so I started working on other skills like communication skill, Management skill and many other skills which will give me advantage over others and stand out separately. I want to become a part of a organization where everyone share there ideas and turn those ideas into reality."
         }
-        
-        
+
+
     )
     aboutdata.save()
         .then((result) => {

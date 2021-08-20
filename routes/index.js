@@ -1,15 +1,20 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 const controllerData = require('../controller/index')
+const pusherData = require('../controller/pushers')
 
 /* GET home page. */
 router.get('/', controllerData.index);
+/* POST home page. */
+router.post('/home', controllerData.indextpost);
+router.get('/home', controllerData.index);
 
 /* GET about page. */
 router.get('/about', controllerData.about);
 
 /* GET contact page. */
 router.get('/contact', controllerData.contactme);
+
 
 /* GET service page. */
 router.get('/service', controllerData.services);
