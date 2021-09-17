@@ -2,7 +2,6 @@ const Portfolliodata = require('../model/indexdata')
 const Servicedata = require('../model/servicedata/servicedata')
 const Portfoliodata = require('../model/potfolliodata/portfolliodata')
 const Aboutdata = require('../model/aboutdata/aboutdata')
-const pusherdata = require('./pushers')
 
 exports.index = function (req, res, next) {
     res.render('index', {
