@@ -17,6 +17,7 @@
     height: auto;
   }
 
+
 /* home left big texts */
 .home-section-textctr {
   top: 2%;
@@ -117,6 +118,7 @@
     height: auto;
   }
 
+
   /* nav brand name */
   .navbar-brand {
     font-size: 22px !important;
@@ -124,6 +126,7 @@
   }
 
   /* index page */
+
   .home-section-textctr {
     top: 0%;
     text-align: center;
