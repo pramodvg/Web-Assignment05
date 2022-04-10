@@ -28,16 +28,16 @@ var server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-mongoose.connect(dburi, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then((results) => {
-    server.listen(port);
-    server.on('error', onError);
-    server.on('listening', onListening);
-    console.log("Connected to DB");
-  })
-  .catch((error) => {
-    console.log("error : " + error);
-  });
+  mongoose.connect(dburi, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then((results) => {
+      server.listen(port);
+      server.on('error', onError);
+      server.on('listening', onListening);
+      console.log("Connected to DB");
+    })
+    .catch((error) => {
+      console.log("error : " + error);
+    });
 
 
 /**

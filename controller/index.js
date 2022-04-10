@@ -12,7 +12,6 @@ exports.index = function (req, res, next) {
 
 }
 
-
 exports.about = (req, res, next) => {
     Aboutdata.aboutData.find()
         .then((result) => {
