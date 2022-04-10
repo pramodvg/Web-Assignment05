@@ -160,17 +160,17 @@ ul.navbar-nav > li {
 }
 
 #home-myavtar {
-  border-radius: 10px;
-  box-shadow: 2px 2px 30px 18px rgba(255, 155, 5, 0.137);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 30px 18px rgba(255, 155, 5, 0.21);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 #home-myavtar {
   height: 320px;
-  width: 440px;
+  
   position: relative;
   top: 25%;
   left: 50%;
