@@ -24,6 +24,11 @@
 }
 
   /* index page */
+  .home-imgctr {
+    height: 85%;
+    width: 100%;
+  }
+  
   .home-txt2 {
     font-size: 65px;
     line-height: 80px;
@@ -126,7 +131,10 @@
   }
 
   /* index page */
-
+.home-imgctr {
+  height: 80%;
+  width: 100%;
+}
   .home-section-textctr {
     top: 0%;
     text-align: center;
